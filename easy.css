@@ -1,0 +1,317 @@
+header {
+    color: #000000; 
+    padding: 10px;
+    text-align: center;
+    background-color: #f8f9fb;
+}
+body {   
+    display: flex;
+    background-color: rgba(249, 251, 251, 0.715);
+    flex-direction: column; 
+    margin: 0;
+    padding: 0;
+    padding-bottom: 100px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    background-image: ;
+    
+}
+h2 {
+    text-align: center;
+}
+ 
+
+
+/* Styles untuk kelas baru 'konten' */
+.konten {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .konten p {
+    color: #333;
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  
+  /* Animasi untuk kelas 'konten' */
+  .konten {
+    animation: slideUp 1s ease-in-out;
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+.footer-beranda{
+    bottom: -189px;
+}
+    
+
+.search-form{
+    margin: auto;
+    padding-top: 20px;
+}
+
+.search-form input {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 1200px;
+    margin: auto;
+}
+.search-form button {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* CSS Navbar dan Animasi Bounce */
+.navbar {
+    background-color: rgb(183, 33, 33);
+    padding: 20px;
+    border-radius: 10px;
+    
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navbar a {
+    display: inline-block;
+    margin: 0 20px;
+    color: #f8f5f5;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+
+/* Animasi gerakan santai (Ease) pada tautan navigasi */
+.navbar a {
+    transition: transform 0.3s ease; /* Transisi untuk gerakan dengan fungsi ease */
+  }
+  
+  .navbar a:hover {
+    transform: translateY(-3px); /* Efek gerakan saat kursor di atas tautan */
+  }
+  
+
+
+.navbar a:hover {
+    transform: scale(1.1);
+    animation: bounce 0.5s ease infinite;
+    color: #f8f5f5; /* Warna teks default saat tidak animasi */
+}
+
+/* CSS App Bar */
+body.loaded .navbar {
+    transform: translateY(0);
+}
+
+.app-bar {
+    justify-content: space-between;
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.app-bar:hover {
+    color: #000000;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
+.product {
+    width: 20%;
+    float: left;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    text-align: center;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+.product p {
+    margin: 8px 0;
+}
+
+ 
+.product img {
+    max-width: 90%;
+    height: auto;
+}
+
+.product p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.floating-button {
+    position: fixed;
+    bottom: 60px;
+    right: 0px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+    z-index: 100;   
+    background: transparent;
+
+}
+
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.contact-form h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.contact-form button {
+    background-color: #EE4D2D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #b35c00;
+}
+
+.contact-info {
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.contact-info h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+.contact-info p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.contact-info {
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+.product a{
+    text-decoration: none;
+    color: black;
+}
+.product button {
+    margin-bottom: 5px;
+
+}
+
+/* footer {
+    margin-top: 50px;
+    padding-top: 100px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+} */
+
+/* CSS */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0; /* Sesuaikan dengan kebutuhan Anda */
+  }
+  
